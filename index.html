@@ -1,194 +1,9 @@
 
- <head>
+<head>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=VT323&amp;subset=latin-ext" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <style>
-
-  	:root{
-  		/*
-  		#1b998b #ff9b71  #fffd82 #ed217c
-  		*/
-  		--main-color: #1b998b;
-
-  	}
-
-	html, body{
-		background-color: rgb(15,17,19);
-		margin : 0;
-		padding: 0;
-		font-family: 'VT323', monospace;
-	}
-
-	.slide{
-		overflow: hidden;
-		display : grid;
-		grid-template-columns : 100vw 100vw 100vw;
-		background-color: rgba(40,43,48);
-	}
-
-	.reverse-slide{
-		overflow: hidden;
-		display : grid;
-		grid-template-columns : 100vw 100vw 100vw;
-		background-color: rgba(40,43,48);
-		margin-left: -200vw;
-	}
-
-	.footer{
-		position: fixed;
-		bottom:0;
-		padding:1em;
-		background-color: #23272A;
-		font-family: 'VT323', monospace;
-	}
-
-	.footer-switch, .footer-slide{
-		display:inline;
-	}
-
-	.footer-switch{
-		cursor: pointer;
-	}
-
-	.footer-switch:hover{
-		color: var(--main-color);
-	}
-
-	.main-color{
-		color: var(--main-color);
-	}
-
-
-	.header{
-		padding-left: 2em;
-		padding-right: 2em;
-		font-family: 'VT323', monospace;
-		height: 4em;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #23272A
-	}
-
-	.header a{
-		text-align:center;
-		text-decoration : none;
-		font-size: 1.5em;
-		transition: 0.1s;
-		color:#a5a5a5
-	}
-
-	.header a:hover{
-		color: var(--main-color)
-	}
-
-	.header a.current{
-		color: var(--main-color)
-	}
-
-	.subheader{
-		display:flex;
-		color: var(--main-color)
-	}
-
-	.subheader > div{
-		margin: auto;
-		text-align: center;
-		font-family: 'VT323', monospace;
-		background-color: rgb(40,43,48) ;
-		border-bottom-left-radius : 25px;
-		border-bottom-right-radius: 25px;
-		width: 50%;
-		font-size: 3em;
-		cursor:pointer;
-
-	}
-
-	
-	
-
-	.hidden{
-		opacity : 0;
-	}
-
-	.hide{
-		color: grey;
-		background-color:#23272A;
-		font-size: 0.5em;
-		border-bottom-left-radius : 25px;
-		border-bottom-right-radius: 25px;
-		
-		transition: 1s;
-	}
-
-	.subheader > div:hover .hide{
-		color: var(--main-color);
-	}
-
-	.welcome{
-		font-size:0.5em;
-		color:#a5a5a5
-	}
-
-	i{
-		vertical-align: text-bottom;
-	}
-
-	/* RESPONSIVNESS */
-
-	.mobile{
-		display:none;
-	}
-
-		img {
-		width: 100%;
-		margin-top: 1em;
-	}
-
-	.main{
-		background-color:rgb(54,57,63);
-		color:#a5a5a5;
-		margin: 2em 5em 2em 5em;
-		padding: 1em;
-		border-radius: 15px;
-	}
-
-	@media only screen and (max-width: 1024px){
-		.mobile{
-			display:initial;
-		}
-		.screen{
-			display:none!important;
-		}
-		.current{
-			display:initial!important;
-		}
-
-			.subheader > div{
-			width: 100%;
-			border-bottom-left-radius : 0px;
-			border-bottom-right-radius: 0px;
-		}
-
-		.hide{
-
-		border-bottom-left-radius : 0px;
-		border-bottom-right-radius: 0px;
-
-	}
-
-	.footer {
-		font-size:0.8em;
-	}
-
-
-
-	}
-
-</style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"  type="text/css">
 </head> 
 
 
@@ -205,39 +20,123 @@
 	<div>
 		<span class="welcome">Mon nom est</span><br>
 		Bernard Geoffroy<br>
-	<span class="welcome">Et je vous souhaite la bienvenue sur mon portfolio</span>
+	<span class="welcome">Bienvenue sur mon portfolio !</span>
 	<div class="hide"><i class="material-icons">eject</i></div>
 </div>
 </div>
-<img style="background: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),var(--main-color), var(--main-color));" src="banner.png">
+<img class="banner" style="background: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),var(--main-color), var(--main-color));" src="images/banner.png">
 <div class="slide"> 
 	<div class="main slide-1">
-			Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-	</div>
+		<h1>Qui suis-je ?</h1>
+	J'ai 20 ans, J'étudie dans le domaine de l'informatique et je suis un parcours plutôt typique depuis Septembre 2016, date à laquelle j'ai rejoins l'IUT informatique de Metz. Au cours de ma deuxième et dernière année en IUT, j'ai décidé de me spécialiser dans le développement web. J'ai donc postulé à la Licence pro CIASIE de Nancy où je finalise aujourd'hui ma formation. Afin d'obtenir ma licence professionelle, je dois effectuer un stage de 12 semaines en entreprise.  
+		<h2>Pourquoi le web ?</h2>
+	Pour moi le web est à la fois une passion et une vocation. Je crois que tout problème possède sa solution (et pas qu'une seule) dans le domaine du web car il possède une immense communautée qui partage énormément de ressources qui sont toutes très accessible.
+	<h2>Et à part ça ?</h2>
+	En plus de l'informatique et du web, j'adore le rock, notamment les genres alternatif et britannique (debaser est un clin d'oeil à la chanson du même nom des Pixies) Je suis également un amateur d'esport et un grand fan des petits studios de jeu vidéo indépendant tel que Blizzard ou Nintendo.
+</div>
 	<div class="main slide-2">
-		Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+		<h1>Back-End</h1>
+		Mes différentes formations étant plus accès sur le back-end, je maitrise ainsi plus cette aspect de la programmation web.
+		<br><br>
+		Pendant mes 2 ans en IUT informatique, le php était imposé dans la plupart des projets, et j'ai réalisé un stage de 10 semaines ou php était également imposé, j'ai donc beaucoup d'experience avec ce langage ainsi que ses différents framework, j'ai notamment utilisé CodeIgniter, Laravel et CakePhp.
+		<br><br>
+		Les languages à utiliser étant moins imposé en Licence Professionelle CIASIE, j'en ai profité pour apprendre NodeJS avec lequel j'ai plus d'affinité et ai pu mener à bien plusieurs projets de groupe au cours de l'année  
+		<br><br>
+		En terme de base de donnée je maitrise efficacement MySql et NoSql
+		<br><br>
+		En ce qui concerne le travail collaboratif, le versioning, et les aspects de dev ops, je maitrîse les outils tels que Git, Docker ou encore Trello, j'ai également pratiqué la méthode agile Scrum à la fois en dut informatique et lors de ma licence professionelle
+		Mise en prod, dev ops
 	</div>
 	<div class="main slide-3">
-		Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+		<h1>Realisations</h1>
+
+		<h2 class="toggle" data-target="trustePot"><img width="50" height="50" src="icons/icon_pot.png"> TrustEpot <i class="material-icons drop_down">arrow_drop_down</i></h2>
+		<div id="trustePot" class="project" style="display:none;">
+			<div class="project-images">
+					<img src="icons/trustepot0.png">
+					<img src="icons/trustepot1.png">
+					<img src="icons/trustepot2.png">
+			</div>
+			<div class="project-description">
+				Trust-ePot est un projet de groupe dans le cadre du DUT informatique. Il s'agit d'une application web permettant de gérer des capteurs sur des plantes, ainsi que de notifier l'utilisateur quand des variables (Température, pH, Luminosité, Humidité) dépassent les normes indiquées dans une base de donnée de plus de 48000 plantes. Dans ce projet j'ai surtout travaillé sur l'application web avec CodeIgniter (php), Bootstrap, Javascript, NodeJS, MQTT, jQuery et Charts.JS 
+				<br><br>
+				Truest-ePot est un des projets qui me tiens à coeur et il est toujours en développement un an après son commencement alors que nous suivons tous aujourd'hui une formation différente.
+				<br><br><div style="text-align:center;"><a target="_blank" href="https://github.com/samet-alaca/trust-epot"><img class="git" width="50" height="50" src="icons/git.svg"/></a></div>
+			</div>
+		</div>
+
+		<h2 class="toggle" data-target="gestionStock"><i width="50" height="50" class="material-icons">shopping_cart</i> Application web de gestion de stock et d'achats groupés <i class="material-icons drop_down">arrow_drop_down</i></h2>
+		<div id="gestionStock" class="project" style="display:none;">
+			<div class="project-images">
+				<img src="icons/stock1.jpg">
+				<img src="icons/stock2.PNG">
+			</div>
+			<div class="project-description">
+				J'ai réalisé au cours de mes 10 semaines de stage en DUT Informatique un logiciel de gestion de stock et d'achats groupés en ligne pour un groupement d'études d'huissier de justice. J'ai réalisé ce projet seul et ai donc du prendre en compte de nombreux aspects, de la  conception à la mise en production. Notamment la génération de bon de commande en pdf, de notifications journalière par mail, l'ajout d'articles le plus optmisé possible et la gestion de leur stock.
+			</div>
+		</div>
+
+		<h2  class="toggle" data-target="saliere"><img width="50" height="50" src="icons/Salt.png"> La Salière <i class="material-icons drop_down">arrow_drop_down</i></h2>
+		<div id="saliere" class="project"  style="display:none;">
+			<div class="project-images">
+				<img src="icons/salt1.png">
+			</div>
+			<div class="project-description">
+				La Salière est un projet de groupe sur une semaine en partenariat avec la société luxembourgeoise Awevo dans le cadre du DUT informatique. Le sujet était de lier une boutique en ligne à un bouton flic.io, à la manière des dash buttons d'amazon. Pour cela nous devions au préalable créer une boutique à l'aide du CMS Magento (nous avons choisi le thème des épices), puis créer une interface web utilisant l'API Rest de magento afin de paramétrer les actions du bouton. J'ai travaillé sur les principaux aspects du projet : l'installation et le paramétrage de magento ainsi que les scripts php de l'interface web, notamment ceux utilisant l'API de magento.
+				<br><br><div style="text-align:center;"><a target="_blank" href="https://github.com/GeoffroyBERNARD/Interface-Saliere"><img class="git" width="50" height="50" src="icons/git.svg"/></a></div>
+			
+			</div>
+		</div>
+		
 	</div>
 </div> 
-<img style="margin-top: 0;background: linear-gradient( var(--main-color),var(--main-color),rgba(255,255,255,0.0),rgba(255,255,255,0.0));" src="banner-reverse.png">
+<img class="banner" style="margin-top: 0;background: linear-gradient( var(--main-color),var(--main-color),rgba(255,255,255,0.0),rgba(255,255,255,0.0));" src="images/banner-reverse.png">
 
 
 
-<img style="background: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),var(--main-color), var(--main-color));" src="banner-2.png">
+<img class="banner" style="background: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0),var(--main-color), var(--main-color));" src="images/banner-2.png">
 <div class="reverse-slide"> 
 	<div class="main reverse-slide-1">
-			Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+		<h1>Mes projets persos</h1>
+
+		<h2 class="toggle" data-target="bytesClicker"><img width="50" height="50" src="icons/bytesclicker.png"> Bytesclicker <i class="material-icons drop_down">arrow_drop_down</i></h2>
+		<div id="bytesClicker" class="project" style="display:none;">
+			<div class="project-images">
+					<img src="icons/bytesclicker1.png">
+					<img src="icons/by2.png">
+			</div>
+			<div class="project-description">
+				
+				Bytesclicker est l'un de mes premiers gros projet personnel et celui sur lequel j'ai consacré le plus de temps. Il s'agit d'un jeu sur navigateur, un "clicker" très largement inspiré du jeu cookie clicker. J'ai développé deux versions en utilisant principalement Javascript.
+				J'ai réalisé tout d'abord une version basique, ne fonctionannt que sur google chrome ayant pour thème les bitcoins. Il s'agit simplement de cliquer sur un bouton pour accumuler des points et acheter des améliorations.
+				<br><br>
+				Après avoir acquis plus de connaissance j'ai décidé de faire une seconde version cette fois orientée sur l'espace avec quelques clins d'oeils à la première version. Il s'agit cette fois d'améliorer un vaisseau spatial en tirant avec celui-ci sur une planète pour accumuler des points.
+			</div>
+		</div>
+		<h2><img width="50" height="50" src="icons/bytesclicker.png"> Mon portefolio</h2>
 	</div>
 	<div class="main reverse-slide-2">
-		Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+		<h1>Front-End</h1>
+		Bien qu'étant plus axé Back-End, j'ai toujours voulu être le plus polyvalent possible. Le back-end étant inutile si l'experience utilisateur est mauvaise, je m'interesse donc énormément aux design des sites que je visite et aux moyens qu'ils emploient afin de rendre mes sites les plus agréable possible à naviguer pour l'utilisateur. Par exemple pour réaliser ce portfolio je me suis inspiré du mode sombre de l'application Discord.
+		<br><br> Vous l'avez surement remarqué, ce portfolio à été réalisé sans framework css avec comme seule aide le classique Jquery. J'utilise néanmoins souvent des frameworks tel que Bootstrap, Materialize ou encore Material Design Boostrap.
+		<br><br>En terme de programmation front en Javascript, en plus de Jquery, j'utilise également reactJs et VueJs, j'ai aussi utilisé au fil des projets une multitude de module Javascript, il en existe des milliers. 
+		<br><br>J'ai acquis au cours de ma formation, les bonne-pratique à avoir lors de la conception de document web, comme l'importance de rester dans le flux du document, l'utilsation de post processeur css tel que Sass. Ou encore les différentes manières de sécuriser une page web et d'optimiser son chargement sur toutes les plateformes.
+		<br><br> Travail avec un designer
 	</div>
 	<div class="main reverse-slide-3">
-		Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+		<h1>Mes points forts</h1>
+		<h2>Travail de Veille au quotidien</h2>
+		Etant très investi dans le développement web, je m'interesse beaucoup aux technologies utilisés sur les sites que je visite au quotidien, j'ai également beaucoups d'idée de projet personnelle (plus que je n'ai de temps pour les réaliser) J'ai donc beaucoup de culture orientée web
+		<h2>Très bon niveau d'Anglais</h2>
+		La communauté de developpeur web utilise essentiellement l'anglais, mon niveau me permet ainsi de faire des recherches et me documenter très rapidement sur une technologie, une erreur, de comprendre facilement ce que fait un code, et de participer aux discussions de la communauté. 
+		<h2>Polyvalent</h2>
+		Et pas seulement en terme de technologie, en effet j'aime autant travailler seul, qu'en équipe ou en peer programming et j'essaye toujours de mener mes collègues dans la bonne direction et cela en maintenant une bonne entente et une bonne coordination.
+		<h2>Programmation consistante</h2>
+		Je prend à coeur de toujours programmer de manière efficace mais également propre, afin d'obtenir un code lisible, commenté et donc compréhensible par d'autres programmeur mais également optimisé et sans faille.
+
 	</div>
 </div> 
-<img style="margin-top: 0;background: linear-gradient( var(--main-color),var(--main-color),rgba(255,255,255,0.0),rgba(255,255,255,0.0));" src="banner-2-reverse.png">
+<img class="banner" style="margin-top: 0;background: linear-gradient( var(--main-color),var(--main-color),rgba(255,255,255,0.0),rgba(255,255,255,0.0));" src="images/banner-2-reverse.png">
 
 
 
@@ -250,147 +149,13 @@
 	<div class="footer-switch">
 		<i class="material-icons">swap_horiz</i>
 	</div>
+</div>
 
-
+<div class="image-modal">
+	<div class="scroll">
+			<img src="icons/by2.png">
 	</div>
-<script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>	
+</div>
 
-<script>
-
-let slide = 1;
-let oppositeNext = [1,0,2];		//deal with the reverse slide position
-let oppositePrevious = [1,2,1];
-
-$('.switch-1').click(function(){
-	$( ".slide" ).animate({
-    marginLeft : "0vw"
-  }, 1000, function() {
-    slide = 1;
-    setCurrent()
-  	hidePreviousAndNext()
-  	changeColor(slide)
-  });
-
-	$( ".reverse-slide" ).animate({
-    marginLeft : "-200vw"
-  }, 1000, function() {})
-	return false;
-})
-
-$('.switch-2').click(function(){
-	$( ".slide" ).animate({
-    marginLeft : "-100vw"
-  }, 1000, function() {
-    slide = 2;
-    setCurrent()
-  	hidePreviousAndNext()
-  	changeColor(slide)
-  });
-
-		$( ".reverse-slide" ).animate({
-    marginLeft : "-100vw"
-  }, 1000, function() {console.log('done')})
-
-	return false;
-})
-
-$('.switch-3').click(function(){
-	$( ".slide" ).animate({
-    marginLeft : "-200vw"
-  }, 1000, function() {
-    slide = 3;
-    setCurrent()
-  	hidePreviousAndNext()
-  	changeColor(slide)
-  });
-
-	$( ".reverse-slide" ).animate({
-    marginLeft : "0vw"
-  }, 1000, function() {})
-
-
-	return false;
-})
-
-$('.next').click(function(){
-
-	if($('.slide-' + (slide + 1)).length){
-		$( ".slide" ).animate({
-    		marginLeft : ((slide) * -100) + "vw"
-  		}, 1000, function() {
-  			slide ++;
-  			$('.switch-' + slide).fadeTo(1000,1)
-  			setCurrent()
-  			hidePreviousAndNext()
-  			changeColor(slide)
-  		});
-
-		$( ".reverse-slide" ).animate({
-    		marginLeft : ((oppositeNext[slide - 1]) * -100) + "vw"
-  		}, 1000, function() {})
-
-	}
-	return false;
-});
-
-$('.previous').click(function(){
-
-	if($('.slide-' + (slide - 1)).length){
-		$( ".slide" ).animate({
-    		marginLeft : ((slide - 2) * -100) + "vw"
-  		}, 1000, function() {
-  			slide --;
-  			setCurrent()
-  			hidePreviousAndNext()
-  			changeColor(slide)
-  		});
-			console.log(slide)
-			console.log(oppositePrevious[slide - 1])
-			console.log(((oppositePrevious[slide - 1]) * -100) + "vw")
-
-
-  		$( ".reverse-slide" ).animate({
-    		marginLeft : ((oppositePrevious[slide - 1]) * -100) + "vw"
-  		}, 1000, function() {})
-	}
-	return false;
-});
-
-$('.subheader').click(function(){
-	$('.subheader').slideUp(2000);
-	return false;
-})
-
-
-$('.footer-switch').click(function(){
-	$('.footer-slide').fadeToggle();
-})
-
-
-function hidePreviousAndNext(){
-	if (slide == 3) $('.next').fadeTo(500,0);
-	else $('.next').fadeTo(500,1);
-
-	if (slide == 1) $('.previous').fadeTo(500,0);
-	else $('.previous').fadeTo(500,1);
-}
-
-function setCurrent(){
-	$('.current').removeClass('current');
-  	$('.switch-' + slide).addClass('current');
-}
-
-function changeColor(color){
-	colors = ['#1b998b', '#ed217c',  '#fffd82']
-	document.documentElement.style.setProperty('--main-color', colors[color - 1])
-}
-
-
-
-
-
-
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+<script src="script.js"></script>
