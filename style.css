@@ -4,6 +4,11 @@
 
 :root{
     --main-color: #1b998b;
+    --dark: rgba(40,43,48);
+    --darker: #23272A;
+    --text: #a5a5a5;
+    --grey: rgb(54,57,63);
+    --background: rgb(15,17,19);
 }
 
 .skills{
@@ -30,6 +35,8 @@
 em{
   color: var(--main-color);
 }
+
+
 
 .icon{
   width: 75px;
@@ -74,7 +81,7 @@ em{
 }
 
 html, body{
-  background-color: rgb(15,17,19);
+  background-color: var(--background);
   margin : 0;
   padding: 0;
   font-family: 'VT323', monospace;
@@ -84,14 +91,14 @@ html, body{
   overflow: hidden;
   display : grid;
   grid-template-columns : 100vw 100vw 100vw;
-  background-color: rgba(40,43,48);
+  background-color: var(--dark);
 }
 
 .reverse-slide{
   overflow: hidden;
   display : grid;
   grid-template-columns : 100vw 100vw 100vw;
-  background-color: rgba(40,43,48);
+  background-color: var(--dark);
   margin-left: -200vw;
 }
 
@@ -99,7 +106,7 @@ html, body{
   position: fixed;
   bottom:0;
   padding:1em;
-  background-color: #23272A;
+  background-color: var(--darker);
   font-family: 'VT323', monospace;
 }
 
@@ -129,7 +136,7 @@ html, body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #23272A
+  background-color: var(--darker);
 }
 
 .header a{
@@ -137,7 +144,7 @@ html, body{
   text-decoration : none;
   font-size: 1.5em;
   transition: 0.1s;
-  color:#a5a5a5
+  color:var(--text);
 }
 
 .header a:hover{
@@ -157,7 +164,7 @@ html, body{
   margin: auto;
   text-align: center;
   font-family: 'VT323', monospace;
-  background-color: rgb(40,43,48) ;
+  background-color: var(--dark);
   border-bottom-left-radius : 25px;
   border-bottom-right-radius: 25px;
   width: 50%;
@@ -171,8 +178,8 @@ html, body{
 }
 
 .hide{
-  color: grey;
-  background-color:#23272A;
+  color: var(--text);
+  background-color:var(--darker);
   font-size: 0.5em;
   border-bottom-left-radius : 25px;
   border-bottom-right-radius: 25px;
@@ -186,7 +193,7 @@ html, body{
 
 .welcome{
   font-size:0.5em;
-  color:#a5a5a5
+  color:var(--text);
 }
 
 i{
@@ -203,8 +210,8 @@ i{
 }
 
 .main{
-  background-color:rgb(54,57,63);
-  color:#a5a5a5;
+  background-color:var(--grey);
+  color:var(--text);
   margin: 1em 10em 1em 10em;
   padding: 1em;
   border-radius: 15px;
