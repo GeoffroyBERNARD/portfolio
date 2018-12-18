@@ -38,6 +38,7 @@
 }
 
 .welcome_text{
+  font-weight: 100;
   font-size: 5em;
   margin-left: 1em;
   text-align: center;
@@ -99,7 +100,7 @@ html, body{
   font-family: 'Fira Sans', sans-serif;
 }
 
-em,h1,h2,h3,h4{
+em,zz h1,h2,h3,h4{
   font-family: 'VT323', monospace;
 }
 
