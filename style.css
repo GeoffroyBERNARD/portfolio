@@ -9,6 +9,17 @@
     --text: #a5a5a5;
     --grey: rgb(54,57,63);
     --background: rgb(15,17,19);
+    --banner: initial;
+    --shadow : 0;
+}
+
+
+.banner{
+  display: var(--banner);
+}
+
+.header, .main{
+  box-shadow: var(--shadow)
 }
 
 .skills{
@@ -110,15 +121,15 @@ html, body{
   font-family: 'VT323', monospace;
 }
 
-.footer-switch, .footer-slide{
+.footer-switch, .footer-slide, .footer-lightmode{
   display:inline;
 }
 
-.footer-switch{
+.footer-switch, .footer-lightmode{
   cursor: pointer;
 }
 
-.footer-switch:hover{
+.footer-switch:hover, .footer-lightmode:hover{
   color: var(--main-color);
 }
 

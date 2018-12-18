@@ -3,6 +3,7 @@
 let slide = 1;
 let oppositeNext = [1,0,2];		//deal with the reverse slide position
 let oppositePrevious = [1,2,1];
+let darkMode = true;
 
 //scrollTO
 $.fn.scrollTo = function (speed) {
@@ -119,6 +120,11 @@ $('.footer-switch').click(function(){
 	$('.footer-slide').fadeToggle();
 })
 
+$('.footer-lightmode').click(function(){
+	changeMode();
+});
+
+
 
 function hidePreviousAndNext(){
 	if (slide == 3) $('.next').fadeTo(500,0);
@@ -136,6 +142,33 @@ function setCurrent(){
 function changeColor(color){
 	colors = ['#1b998b', '#ed217c',  '#fffd82']
 	document.documentElement.style.setProperty('--main-color', colors[color - 1])
+}
+
+
+function changeMode(){
+	if (darkMode == true){
+		document.documentElement.style.setProperty('--dark', 'rgb(214, 214, 214)');
+    document.documentElement.style.setProperty('--darker', 'rgb(172, 188, 204)');
+   	document.documentElement.style.setProperty('--text', 'black');
+		document.documentElement.style.setProperty('--grey', 'rgb(172, 188, 204)');
+		document.documentElement.style.setProperty('--background', 'rgb(15,17,19)');
+		document.documentElement.style.setProperty('--banner', 'none');
+		document.documentElement.style.setProperty('--shadow', '-2px 2px 300px 1px var(--main-color)');
+
+	}
+	else{
+		document.documentElement.style.setProperty('--dark', 'rgba(40,43,48)');
+    document.documentElement.style.setProperty('--darker', '#23272A');
+   	document.documentElement.style.setProperty('--text', '#a5a5a5');
+		document.documentElement.style.setProperty('--grey', 'rgb(54,57,63)');
+		document.documentElement.style.setProperty('--background', 'rgb(15,17,19)');
+		document.documentElement.style.setProperty('--banner', 'initial');
+		document.documentElement.style.setProperty('--shadow', '0');
+	}
+
+	
+	darkMode = !darkMode;
+
 }
 
 $('.image-modal').click(function(){
