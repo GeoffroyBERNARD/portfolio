@@ -147,11 +147,11 @@ function changeColor(color){
 
 function changeMode(){
 	if (darkMode == true){
-		document.documentElement.style.setProperty('--dark', 'rgb(214, 214, 214)');
+		document.documentElement.style.setProperty('--dark', 'rgb(172, 188, 204)');
     document.documentElement.style.setProperty('--darker', 'rgb(172, 188, 204)');
    	document.documentElement.style.setProperty('--text', 'black');
 		document.documentElement.style.setProperty('--grey', 'rgb(172, 188, 204)');
-		document.documentElement.style.setProperty('--background', 'rgb(15,17,19)');
+		document.documentElement.style.setProperty('--background', 'rgb(172, 188, 204)');
 		document.documentElement.style.setProperty('--banner', 'none');
 		document.documentElement.style.setProperty('--shadow', '-2px 2px 300px 1px var(--main-color)');
 
