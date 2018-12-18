@@ -6,24 +6,70 @@
     --main-color: #1b998b;
 }
 
+.skills{
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.welcome_text{
+  font-size: 5em;
+  margin-left: 1em;
+  text-align: center;
+}
+
 em{
   color: var(--main-color);
+}
+
+.icon{
+  width: 75px;
+  height: 75px;
+}
+
+.center{
+  text-align:center;
 }
 
 .projects{
   display:flex;
   flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap ;
+ 
 }
 
 .project-toggle{
+  padding:1em;
+  padding-bottom:0px;
+  border-radius: 50px;
+  border-bottom-left-radius:0px;
+  border-top-right-radius:0px;
+  background-color:rgba(0,0,0,0.1);
+  width: 200px;
   display:flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s;
+  margin-bottom: 1em;
 }
 
+.project-toggle:hover{
+  background-color:rgba(255,255,255,0.1);
+}
+
+
 .profil_picture{
-  height: 100%;
-  width: 200px;
+  width: 300px;
   border-radius: 15px;
 }
 
@@ -172,9 +218,10 @@ h1{
   color: var(--main-color)
 }
 
-h2{
+h2, h3{
   color: var(--main-color)
 }
+
 
 
 .project{
@@ -188,7 +235,14 @@ h2{
 
 @media only screen and (max-width: 1024px){
 
+  .welcome{
+    flex-direction: column;
+  }
 
+  .welcome_text{
+    margin: 0;
+    margin-top: 1em;
+  }
 
   .project-description{
     order: 1;
@@ -247,9 +301,9 @@ h2{
   cursor: pointer;
   padding: 1em;
   margin :auto;
-  width: 300px;
   height: auto;
   transition: 1s;
+  max-width: calc(100% - 2em);
 }
 
 .project-images img:hover {

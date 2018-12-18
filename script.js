@@ -4,6 +4,16 @@ let slide = 1;
 let oppositeNext = [1,0,2];		//deal with the reverse slide position
 let oppositePrevious = [1,2,1];
 
+//scrollTO
+$.fn.scrollTo = function (speed) {
+	if (typeof(speed) === 'undefined')
+			speed = 1000;
+
+	$('html, body').animate({
+			scrollTop: parseInt($(this).offset().top - 50)
+	}, speed);
+};
+
 $('.switch-1').click(function(){
 	$( ".slide" ).animate({
     marginLeft : "0vw"
@@ -98,12 +108,12 @@ $('.previous').click(function(){
 	}
 	return false;
 });
-
+/*	USELESS AS FOR NOW
 $('.subheader').click(function(){
 	$('.subheader').slideUp(2000);
 	return false;
 })
-
+*/
 
 $('.footer-switch').click(function(){
 	$('.footer-slide').fadeToggle();
@@ -138,6 +148,8 @@ $('.project-images img').click(function(){
 })
 
 $('.toggle').click(function(){
-	$('.project').not('#' + $(this).data("target")).slideUp();
-	$('#' + $(this).data("target")).slideToggle("slow");
+	let elm = '#' + $(this).data("target")
+	$('.project').not(elm).slideUp();
+	$(elm).slideToggle("slow",function(){$(elm).scrollTo();})
+	
 });
