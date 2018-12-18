@@ -15,7 +15,7 @@ em{
   flex-direction: row;
 }
 
-.project{
+.project-toggle{
   display:flex;
   flex-direction: column;
   align-items: center;
