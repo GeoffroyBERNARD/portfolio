@@ -169,6 +169,7 @@ $( document ).ready(function() {
 			document.documentElement.style.setProperty('--shadow', '-2px 2px 300px 1px var(--main-color), -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset');
 			document.documentElement.style.setProperty('--dark', 'rgb(117, 137, 191)');
 			document.documentElement.style.setProperty('--background', 'rgb(117, 137, 191)');
+			document.documentElement.style.setProperty('--bugfix', '0px');
 		}
 		else{
 			document.documentElement.style.setProperty('--dark', 'rgba(40,43,48)');
@@ -178,6 +179,7 @@ $( document ).ready(function() {
 			document.documentElement.style.setProperty('--background', 'rgb(15,17,19)');
 			document.documentElement.style.setProperty('--banner', 'initial');
 			document.documentElement.style.setProperty('--shadow', '-1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset');
+			document.documentElement.style.setProperty('--bugfix', '-1em');
 		}
 		darkMode = !darkMode;
 	}

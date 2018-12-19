@@ -55,6 +55,7 @@
     --background: rgb(15,17,19);
     --banner: initial;
     --shadow : -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+    --bugfix: -1em;
 }
 
 .link{
@@ -107,7 +108,9 @@ em{
   color: var(--main-color);
 }
 
-
+.slide, .reverse-slide{
+  margin-top: var(--bugfix);
+}
 
 .icon{
   width: 75px;
