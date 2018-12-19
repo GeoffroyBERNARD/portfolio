@@ -29,6 +29,7 @@ $( document ).ready(function() {
 			marginLeft : "0vw"
 		}, 1000, function() {
 			slide = 1;
+			$('.switch-' + slide).fadeTo(1000,1)
 			setCurrent()
 			hidePreviousAndNext()
 			changeColor(slide)
@@ -46,6 +47,7 @@ $( document ).ready(function() {
 			marginLeft : "-100vw"
 		}, 1000, function() {
 			slide = 2;
+			$('.switch-' + slide).fadeTo(1000,1)
 			setCurrent()
 			hidePreviousAndNext()
 			changeColor(slide)
@@ -64,6 +66,7 @@ $( document ).ready(function() {
 			marginLeft : "-200vw"
 		}, 1000, function() {
 			slide = 3;
+			$('.switch-' + slide).fadeTo(1000,1)
 			setCurrent()
 			hidePreviousAndNext()
 			changeColor(slide)
@@ -107,6 +110,7 @@ $( document ).ready(function() {
 					marginLeft : ((slide - 2) * -100) + "vw"
 				}, 1000, function() {
 					slide --;
+					$('.switch-' + slide).fadeTo(1000,1)
 					setCurrent()
 					hidePreviousAndNext()
 					changeColor(slide)
@@ -163,7 +167,6 @@ $( document ).ready(function() {
 			document.documentElement.style.setProperty('--background', 'rgb(172, 188, 204)');
 			document.documentElement.style.setProperty('--banner', 'none');
 			document.documentElement.style.setProperty('--shadow', '-2px 2px 300px 1px var(--main-color), -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset');
-
 			document.documentElement.style.setProperty('--dark', 'rgb(117, 137, 191)');
 			document.documentElement.style.setProperty('--background', 'rgb(117, 137, 191)');
 		}
@@ -184,7 +187,7 @@ $( document ).ready(function() {
 		$(this).css('display', 'none')
 	})
 
-	// toggle the image modam woth the image clicked
+	// toggle the image modal with the image clicked
 	$('.project-images img').click(function(){
 		$('.image-modal').find('img').attr("src",$(this).attr("src"));
 		$('.image-modal').css('display', 'flex')
