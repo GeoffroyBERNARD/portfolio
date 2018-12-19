@@ -296,7 +296,7 @@ h2, h3{
   max-width: calc(100% - 2em);
   border-radius: 50px 0 50px 0;
 }
-
+ 
 .project-images img:hover {
   transform: scale(1.1);
 }
