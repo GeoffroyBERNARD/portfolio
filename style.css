@@ -1,5 +1,49 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Fira Sans Thin'), local('FiraSans-Thin'), url(./font/fira100.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(./font/fira400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Fira Sans Black'), local('FiraSans-Black'), url(./font/fira900.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/material_icon/icon.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
 
 
 :root{
@@ -27,6 +71,10 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+p{
+  font-weight: 100;
 }
 
 .welcome{
@@ -143,7 +191,6 @@ span, h1,h2,h3,h4{
   bottom:0;
   padding:1em;
   background-color: var(--darker);
-  font-family: 'VT323', monospace;
 }
 
 .footer-switch, .footer-slide, .footer-lightmode{
@@ -166,7 +213,6 @@ span, h1,h2,h3,h4{
 .header{
   padding-left: 2em;
   padding-right: 2em;
-  font-family: 'VT323', monospace;
   height: 4em;
   display: flex;
   flex-direction: row;
@@ -199,7 +245,6 @@ span, h1,h2,h3,h4{
 .subheader > div{
   margin: auto;
   text-align: center;
-  font-family: 'VT323', monospace;
   background-color: var(--dark);
   border-bottom-left-radius : 25px;
   border-bottom-right-radius: 25px;
