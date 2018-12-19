@@ -48,7 +48,7 @@
 
 :root{
     --main-color: #1b998b;
-    --dark: rgba(40,43,48);
+    --dark: rgb(40,43,48);
     --darker: #23272A;
     --text: #a5a5a5;
     --grey: rgb(54,57,63);
@@ -127,8 +127,7 @@ em{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap ;
-  height: calc(100% - 4em); 
- 
+  height: calc(100%); 
 }
 
 .project-toggle{
